@@ -1,0 +1,26 @@
+1.What is RDD?
+
+    Resilient Distributed Datasets (RDD) is a fundamental data structure of Spark. 
+    It is an immutable distributed collection of objects. Each dataset in RDD is divided into logical partitions, 
+    which may be computed on different nodes of the cluster. 
+    RDDs can contain any type of Python, Java, or Scala objects, including user-defined classes.Formally, an RDD is a read-only, partitioned collection of records. RDDs can be created through deterministic operations on either data on stable storage or other RDDs.
+    RDD is a fault-tolerant collection of elements that can be operated on in parallel.
+    
+4. what is transformation?
+    
+     Create a new RDD from existing one is called transformation.Transform are lazy ,they donot compute right away.Map ,filter,union are the transformation
+     
+5.Define Action?
+
+  Return a value from driver program  from the RDD is called Action.Reduce,store,map are the action
+  
+2.what is partition?
+   
+    Data is divided into block is called partition.This information about partition of data store in RDD.
+    
+ 3.what does RDD supports?
+ 
+     RDD’s in Spark are immutable distributed collection of objects.
+Each RDD is split into multiple partitions, which may be computed on different nodes of the cluster. The RDDs can contain any type of Python, Java or Scala objects, including userdefined
+classes.They are not actual data, but they are Objects, which contain information about data residing on the cluster. The RDDs try to solve these problems by enabling fault tolerant, distributed Inmemory
+computations. 
